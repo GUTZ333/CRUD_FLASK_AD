@@ -1,0 +1,20 @@
+POST http://127.0.0.1:5000/post_task
+Content-Type: application/json
+
+{
+  "title": "Assistir a luta entre Jhony x Xamuel",
+  "status": "PENDING",
+  "description": "Esta luta de MMA acontecerá no FIGHT Music Show 7"
+}
+
+###
+
+GET http://127.0.0.1:5000/tasks
+
+###
+
+GET http://127.0.0.1:5000/task/2
+
+###
+
+GET http://127.0.0.1:5000/task/Assistir%20a%20luta%20entre%20Jhony%20x%20Xamuel
