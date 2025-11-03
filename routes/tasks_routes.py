@@ -23,7 +23,7 @@ def handler_post_task():
 @task_routes.route("/put_task/<int:id>", methods=["PUT"])
 def handler_put_task(id):
     data = request.json
-    return update_task(id, data)
+    return update_task(id, data)  
 
 @task_routes.route("/delete_task/<int:id>", methods=["DELETE"])
 def handler_delete_task(id):
